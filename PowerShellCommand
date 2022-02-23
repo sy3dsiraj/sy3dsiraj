@@ -1,1 +1,11 @@
-install iis server  : Install-WindowsFeature -name Web-Server -IncludeManagementTools
+install iis server: 
+    Install-WindowsFeature -name Web-Server -IncludeManagementTools
+
+
+Create empty resource group:
+    New-AzResourceGroup -Name RG01 -Location "South Central US"
+    New-AzResourceGroup RG01 "South Central US"
+    New-AzResourceGroup -Name RG01 -Location "South Central US" -Tag @{Empty=$null; Department="Marketing"}
+    
+
+  
