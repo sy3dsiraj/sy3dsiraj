@@ -1,3 +1,9 @@
+PowerShell AZ Account Connect :
+
+Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
+Connect-AzAccount
+
+
 install iis server: 
     Install-WindowsFeature -name Web-Server -IncludeManagementTools
 
